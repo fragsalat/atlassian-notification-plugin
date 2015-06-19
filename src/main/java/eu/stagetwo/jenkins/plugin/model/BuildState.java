@@ -11,10 +11,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package eu.stagetwo.jenkins.plugin.atlassian.model;
+package eu.stagetwo.jenkins.plugin.model;
 
-import static eu.stagetwo.jenkins.plugin.atlassian.Utils.*;
-import eu.stagetwo.jenkins.plugin.atlassian.Phase;
+import static eu.stagetwo.jenkins.plugin.Utils.*;
+import eu.stagetwo.jenkins.plugin.Phase;
 import hudson.model.AbstractBuild;
 import hudson.model.Job;
 import hudson.model.Run;

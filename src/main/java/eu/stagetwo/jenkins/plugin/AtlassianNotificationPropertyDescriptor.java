@@ -1,4 +1,4 @@
-package eu.stagetwo.jenkins.plugin.atlassian;
+package eu.stagetwo.jenkins.plugin;
 
 import hudson.Extension;
 import hudson.model.Job;

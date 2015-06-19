@@ -1,11 +1,11 @@
-package eu.stagetwo.jenkins.plugin.atlassian;
+package eu.stagetwo.jenkins.plugin;
 
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import eu.stagetwo.jenkins.plugin.atlassian.model.BuildState;
-import eu.stagetwo.jenkins.plugin.atlassian.model.JobState;
-import eu.stagetwo.jenkins.plugin.atlassian.model.ScmState;
+import eu.stagetwo.jenkins.plugin.model.BuildState;
+import eu.stagetwo.jenkins.plugin.model.JobState;
+import eu.stagetwo.jenkins.plugin.model.ScmState;
 import hudson.EnvVars;
 import hudson.model.*;
 import jenkins.model.Jenkins;
@@ -109,7 +109,7 @@ public enum Phase {
             EnvVars env = new EnvVars();
             for (ParameterValue value : paramsAction.getParameters()){
                 if (!value.isSensitive()) {
-                    value.buildEnvironment(run, env);
+                    value.buildEnvVars((AbstractBuild)run, env);
                 }
             }
             buildState.setParameters(env);

@@ -1,4 +1,4 @@
-package eu.stagetwo.jenkins.plugin.atlassian;
+package eu.stagetwo.jenkins.plugin;
 
 import java.io.IOException;
 import java.io.OutputStream;
