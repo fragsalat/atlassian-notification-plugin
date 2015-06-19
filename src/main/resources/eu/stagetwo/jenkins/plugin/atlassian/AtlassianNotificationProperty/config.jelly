@@ -1,0 +1,12 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+    xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:section title="Atlassian Notifications">
+        <f:entry title="Stash URL" description="What is the URL of your Stash instance" field="stashUrl">
+            <f:textbox name="stashUrl" value="${stashUrl}" />
+        </f:entry>
+        <f:entry title="JIRA URL" description="What is the root URL of your JIRA instance" field="jiraUrl">
+            <f:textbox name="jiraUrl" value="${jiraUrl}" />
+        </f:entry>
+    </f:section>
+</j:jelly>
